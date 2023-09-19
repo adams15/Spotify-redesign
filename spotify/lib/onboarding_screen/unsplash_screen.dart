@@ -1,9 +1,23 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:spotify/onboarding_screen/getStarted_screen.dart';
 
-class unsplash_screen extends StatelessWidget {
+class unsplash_screen extends StatefulWidget {
   const unsplash_screen({super.key});
   static String id = "unsplash_screen";
 
+  @override
+  State<unsplash_screen> createState() => _unsplash_screenState();
+}
+
+class _unsplash_screenState extends State<unsplash_screen> {
+  @override
+ void initState() {
+ super.initState();
+ Timer(
+    Duration(seconds: 5),
+    () => Navigator.pushNamed(context, GetStarted.id));
+ }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(

@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       //home: unsplash_screen(),
-      initialRoute: Continue_screen.id,
+      initialRoute: unsplash_screen.id,
       routes: {
       unsplash_screen.id:(context)=> const unsplash_screen(),
       GetStarted.id:(context) => const GetStarted(),
