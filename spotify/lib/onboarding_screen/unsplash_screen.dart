@@ -25,6 +25,7 @@ class _unsplash_screenState extends State<unsplash_screen> {
       body: Center(child: Image.asset("images/spotify.png", 
       height: 80,
       width: 266.52,
+      // check the timer
       )),
     );
   }
