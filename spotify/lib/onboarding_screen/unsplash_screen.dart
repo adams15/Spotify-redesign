@@ -15,7 +15,7 @@ class _unsplash_screenState extends State<unsplash_screen> {
  void initState() {
  super.initState();
  Timer(
-    Duration(seconds: 5),
+    Duration(seconds: 4),
     () => Navigator.pushNamed(context, GetStarted.id));
  }
   @override
